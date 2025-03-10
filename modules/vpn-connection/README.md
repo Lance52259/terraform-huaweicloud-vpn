@@ -36,7 +36,7 @@ Full contributing [guidelines are covered here](../../github/how_to_contribute.m
 
 | Name | Type |
 |------|------|
-| huaweicloud_vpn_customer_gateway.this | resource |
+| huaweicloud_vpn_connection.this | resource |
 
 ## Inputs
 
