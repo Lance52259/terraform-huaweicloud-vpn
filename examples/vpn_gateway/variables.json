@@ -1,0 +1,30 @@
+{
+	"region_name": "cn-north-4",
+	"enterprise_project_id": "0",
+	"vpc_name": "VPC-Test",
+	"vpc_cidr": "172.16.0.0/24",
+	"subnets_configuration": [
+        {
+			"name": "VPC-Subnet-Test",
+			"cidr": "172.16.0.0/24",
+			"ipv6_enabled": false,
+			"dhcp_enabled": false
+		}
+	],
+	"gateway_name": "VPN-GW-Test",
+	"gateway_public_eip_configurations": [
+		{
+			"type": "5_bgp",
+			"bandwidth_name": "VPN-GW-Test-EIP-01",
+			"bandwidth_size": 5,
+			"charge_mode": "traffic"
+		},
+		{
+			"type": "5_bgp",
+			"bandwidth_name": "VPN-GW-Test-EIP-02",
+			"bandwidth_size": 5,
+			"charge_mode": "traffic"
+		}
+	],
+	"delete_eip_on_termination": true
+}
