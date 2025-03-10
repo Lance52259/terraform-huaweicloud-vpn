@@ -24,7 +24,7 @@ data "huaweicloud_vpn_gateway_availability_zones" "this" {
 }
 
 module "vpn_gateway" {
-  source = "../../modules/vpn_gateway"
+  source = "../../modules/vpn-gateway"
 
   enterprise_project_id             = var.enterprise_project_id
 
