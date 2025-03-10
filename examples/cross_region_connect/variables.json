@@ -1,0 +1,65 @@
+{
+    "idc_center_region_name": "cn-east-3",
+    "cloud_side_region_name": "cn-north-4",
+    "enterprise_project_id": "0",
+    "idc_center_vpc_name": "VPC-Test01",
+    "idc_center_vpc_cidr": "172.18.0.0/24",
+    "idc_center_subnets_configuration": [
+        {
+            "name": "VPC-Subnet-Test01",
+            "cidr": "172.18.0.0/24"
+        }
+    ],
+    "cloud_side_vpc_name": "VPC-Test02",
+    "cloud_side_vpc_cidr": "172.16.0.0/24",
+    "cloud_side_subnets_configuration": [
+        {
+            "name": "VPC-Subnet-Test02",
+            "cidr": "172.16.0.0/24"
+        }
+    ],
+    "idc_center_gateway_name": "VPN-GW-Test01",
+    "idc_center_gateway_availability_zones": [
+        "cn-east-3a",
+        "cn-east-3c"
+    ],
+    "idc_center_gateway_public_eip_configurations": [
+        {
+            "type": "5_bgp",
+            "bandwidth_name": "VPN-GW-01-Master-EIP",
+            "bandwidth_size": 5,
+            "charge_mode": "traffic"
+        },
+        {
+            "type": "5_bgp",
+            "bandwidth_name": "VPN-GW-01-Slave-EIP",
+            "bandwidth_size": 5,
+            "charge_mode": "traffic"
+        }
+    ],
+    "idc_center_customer_gateway_name": "VPN-Custom-GW-Test01",
+    "idc_center_connection_name": "VPN-CONN-Test01",
+    "idc_center_connection_pre_shared_key": "Test@123",
+    "cloud_side_gateway_name": "VPN-GW-Test02",
+    "cloud_side_gateway_availability_zones": [
+        "cn-north-4a",
+        "cn-north-4b"
+    ],
+    "cloud_side_gateway_public_eip_configurations": [
+        {
+            "type": "5_bgp",
+            "bandwidth_name": "VPN-GW-02-Master-EIP",
+            "bandwidth_size": 5,
+            "charge_mode": "traffic"
+        },
+        {
+            "type": "5_bgp",
+            "bandwidth_name": "VPN-GW-02-Slave-EIP",
+            "bandwidth_size": 5,
+            "charge_mode": "traffic"
+        }
+    ],
+    "cloud_side_customer_gateway_name": "VPN-Custom-GW-Test02",
+    "cloud_side_connection_name": "VPN-CONN-Test02",
+    "cloud_side_connection_pre_shared_key": "Test@123"
+}
