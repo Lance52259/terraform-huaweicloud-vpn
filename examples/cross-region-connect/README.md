@@ -2,7 +2,7 @@
 
 Use the VPN resources to connect two VPC networks in different regions.
 
-# Usage
+## Usage
 
 To run this example you need to execute:
 
@@ -55,13 +55,13 @@ No resources.
 | cloud_side_vpc_cidr | The CIDR block of the VPC resource in the cloud side | "172.16.0.0/24" |
 | cloud_side_subnets_configuration | The configuration for the subnet resources to which the VPC (in the cloud side) belongs | [<br>  {<br>    "name": "VPC-Subnet-Test02",<br>    "cidr": "172.16.0.0/24"<br>  }<br>] |
 | idc_center_gateway_name | The name of the VPN gateway in the IDC center | "VPN-GW-Test01" |
-| idc_center_gateway_availability_zones | The availability zones of the VPN gateway in the IDC center | [<br>  "cn-east-3a",<br>  "cn-east-3c"<br>] ||
+| idc_center_gateway_availability_zones | The availability zones of the VPN gateway in the IDC center | [<br>  "cn-east-3a",<br>  "cn-east-3c"<br>] |
 | idc_center_gateway_public_eip_configurations | The EIP configurations of the public VPN gateway in the IDC center | <pre>[<br>  {<br>    "type": "5_bgp",<br>    "bandwidth_name": "VPN-GW-01-Master-EIP",<br>    "bandwidth_size": 5,<br>    "charge_mode": "traffic"<br>  },<br>  {<br>    "type": "5_bgp",<br>    "bandwidth_name": "VPN-GW-01-Slave-EIP",<br>    "bandwidth_size": 5,<br>    "charge_mode": "traffic"<br>  }<br>]</pre> |
 | idc_center_customer_gateway_name | The name of the VPN gateway in the IDC center | "VPN-Custom-GW-Test01" |
 | idc_center_connection_name | The name of the VPN connection in the IDC center | "VPN-CONN-Test01" |
 | idc_center_connection_pre_shared_key | The content of the pre-shared key used by the VPN connection in the IDC center | "Test@123" |
 | cloud_side_gateway_name | The name of the VPN gateway in the IDC center | "VPN-GW-Test02" |
-| cloud_side_gateway_availability_zones | The availability zones of the VPN gateway in the IDC center | [<br>  "cn-north-4a",<br>  "cn-north-4b"<br>] ||
+| cloud_side_gateway_availability_zones | The availability zones of the VPN gateway in the IDC center | [<br>  "cn-north-4a",<br>  "cn-north-4b"<br>] |
 | cloud_side_gateway_public_eip_configurations | The EIP configurations of the public VPN gateway in the IDC center | <pre>[<br>  {<br>    "type": "5_bgp",<br>    "bandwidth_name": "VPN-GW-02-Master-EIP",<br>    "bandwidth_size": 5,<br>    "charge_mode": "traffic"<br>  },<br>  {<br>    "type": "5_bgp",<br>    "bandwidth_name": "VPN-GW-02-Slave-EIP",<br>    "bandwidth_size": 5,<br>    "charge_mode": "traffic"<br>  }<br>]</pre> |
 | cloud_side_customer_gateway_name | The name of the VPN gateway in the IDC center | "VPN-Custom-GW-Test02" |
 | cloud_side_connection_name | The name of the VPN connection in the IDC center | "VPN-CONN-Test02" |

@@ -2,7 +2,7 @@
 
 Configuration in this directory creates a single VPN gateway and associate two EIP to enable the public network access.
 
-# Usage
+## Usage
 
 To run this example you need to execute:
 
