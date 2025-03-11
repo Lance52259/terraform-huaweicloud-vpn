@@ -70,4 +70,7 @@ No resource.
 
 ## Outputs
 
-No output.
+| Name | Description |
+|------|-------------|
+| idc_center_connection_id | The ID of the VPN connection in the IDC center |
+| cloud_side_connection_id | The ID of the VPN connection in the cloud side |
