@@ -1,8 +1,23 @@
 # The Terraform module of HUAWEI Cloud VPN service
 
-What capabilities does the current Module provide:
+What capabilities does the current module provide:
 
-+ One-click deployment of VPN resources.
++ Flexible VPN resource combination (through multiple VPN sub-modules)
++ Abundant example references, one-click deployment of VPN resources.
+
+## Notes
+
+If you want to manage VPN resources using Terraform module (via this repository), you need to make the following
+declaration in the `source` of the script.
+
+```hcl
+# Use the latest version.
+module "vpn_gateway" {
+  source = "github.com/terraform-huaweicloud-modules/terraform-huaweicloud-vpn/modules/vpn-gateway"
+
+  ...
+}
+```
 
 ## Contributing
 
@@ -18,14 +33,18 @@ Full contributing [guidelines are covered here](.github/how_to_contribute.md).
 | Terraform | >= 1.3.0 |
 | Huaweicloud Provider | >= 1.73.0 |
 
+## Modules
+
+No module.
+
 ## Resources
 
-No resources
+No resource.
 
 ## Inputs
 
-No inputs
+No input
 
 ## Outputs
 
-No outputs
+No output

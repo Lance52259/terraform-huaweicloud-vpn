@@ -32,6 +32,10 @@ Full contributing [guidelines are covered here](../../github/how_to_contribute.m
 | Terraform | >= 1.3.0 |
 | Huaweicloud Provider | >= 1.73.0 |
 
+## Modules
+
+No module.
+
 ## Resources
 
 | Name | Type |
