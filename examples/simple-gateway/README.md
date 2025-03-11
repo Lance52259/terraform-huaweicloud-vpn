@@ -26,8 +26,8 @@ Run `terraform destroy` when you don't need these resources.
 <!-- markdownlint-disable MD013 -->
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="vpn_network"></a> [vpn\_network](#vpn\_network) | ../../../terraform-huaweicloud-vpc | v1.2.0 |
-| <a name="vpn_gateway"></a> [vpn\_gateway](#vpn\_gateway) | ../../modules/vpn-gateway | N/A |
+| vpn_network | [terraform-huaweicloud-vpc](https://github.com/terraform-huaweicloud-modules/terraform-huaweicloud-vpc) | v1.2.0 |
+| vpn_gateway | [../../modules/vpn-gateway](../../modules/vpn-gateway/README.md) | N/A |
 <!-- markdownlint-enable MD013 -->
 
 ## Resources
@@ -53,4 +53,4 @@ No resource.
 
 | Name | Description |
 |------|-------------|
-| <a name="gateway_id"></a> [gateway\_id](#gateway\_id) | The ID of the VPN gateway |
+| gateway_id | The ID of the VPN gateway |

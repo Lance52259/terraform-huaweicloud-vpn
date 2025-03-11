@@ -26,14 +26,14 @@ Run `terraform destroy` when you don't need these resources.
 <!-- markdownlint-disable MD013 -->
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="idc_center_network"></a> [idc\_center\_network](#idc\_center\_network) | ../../../terraform-huaweicloud-vpc | v1.2.0 |
-| <a name="idc_center_vpn_gateway"></a> [idc\_center\_vpn\_gateway](#idc\_center\_vpn\_gateway) | ../../modules/vpn-gateway | N/A |
-| <a name="idc_center_vpn_customer_gateway"></a> [idc\_center\_vpn\_customer\_gateway](#idc\_center\_vpn\_customer\_gateway) | ../../modules/vpn-customer-gateway | N/A |
-| <a name="idc_center_vpn_connection"></a> [idc\_center\_vpn\_connection](#idc\_center\_vpn\_connection) | ../../modules/vpn-connection | N/A |
-| <a name="cloud_side_network"></a> [cloud\_side\_network](#cloud\_side\_network) | ../../../terraform-huaweicloud-vpc | v1.2.0 |
-| <a name="cloud_side_vpn_gateway"></a> [cloud\_side\_vpn\_gateway](cloud\_side\_vpn\_gateway) | ../../modules/vpn-gateway | N/A |
-| <a name="cloud_side_vpn_customer_gateway"></a> [cloud\_side\_vpn\_customer\_gateway](#cloud\_side\_vpn\_customer\_gateway) | ../../modules/vpn-customer-gateway | N/A |
-| <a name="cloud_side_vpn_connection"></a> [cloud\_side\_vpn\_connection](#cloud\_side\_vpn\_connection) | ../../modules/vpn-connection | N/A |
+| idc_center_network | [terraform-huaweicloud-vpc](https://github.com/terraform-huaweicloud-modules/terraform-huaweicloud-vpc) | v1.2.0 |
+| idc_center_vpn_gateway | [../../modules/vpn-gateway](../../modules/vpn-gateway/README.md) | N/A |
+| idc_center_vpn_customer_gateway | [../../modules/vpn-customer-gateway](../../modules/vpn-customer-gateway/README.md) | N/A |
+| idc_center_vpn_connection | [../../modules/vpn-connection](../../modules/vpn-connection/README.md) | N/A |
+| cloud_side_network | [terraform-huaweicloud-vpc](https://github.com/terraform-huaweicloud-modules/terraform-huaweicloud-vpc) | v1.2.0 |
+| cloud_side_vpn_gateway | [../../modules/vpn-gateway](../../modules/vpn-gateway/README.md) | N/A |
+| cloud_side_vpn_customer_gateway | [../../modules/vpn-customer-gateway](../../modules/vpn-customer-gateway/README.md) | N/A |
+| cloud_side_vpn_connection | [../../modules/vpn-connection](../../modules/vpn-connection/README.md) | N/A |
 <!-- markdownlint-enable MD013 -->
 
 ## Resources
