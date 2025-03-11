@@ -32,7 +32,7 @@ Run `terraform destroy` when you don't need these resources.
 
 ## Resources
 
-No resources.
+No resource.
 
 ## Inputs
 
