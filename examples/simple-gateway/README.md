@@ -40,7 +40,7 @@ No resource.
 | Name | Description | Value |
 |------|-------------|-------|
 | region_name | The region where the resources are located | `"cn-north-4"` |
-| enterprise_project_id | Used to specify whether the resource is created under the enterprise project (this parameter is only valid for enterprise users) | "0" |
+| enterprise_project_id | Used to specify whether the resource is created under the enterprise project (this parameter is only valid for enterprise users) | `"0"` |
 | vpc_name | The name of the VPC resource | `"VPC-Test"` |
 | vpc_cidr | The CIDR block of the VPC resource | `"172.16.0.0/24"` |
 | subnets_configuration | The configuration for the subnet resources to which the VPC belongs | <pre>[<br>  {<br>    "name": "VPC-Subnet-Test",<br>    "cidr": "172.16.0.0/24",<br>    "ipv6_enabled": false,<br>    "dhcp_enabled": false<br>  }<br>]</pre> |
