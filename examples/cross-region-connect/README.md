@@ -8,11 +8,11 @@ To run this example you need to execute:
 
 ```bash
 $ terraform init
-$ terraform plan
-$ terraform apply
+$ terraform plan -var-file=variables.json
+$ terraform apply -var-file=variables.json
 ```
 
-Run `terraform destroy` when you don't need these resources.
+Run `terraform destroy -var-file=variables.json` when you don't need these resources.
 
 ## Requirements
 
