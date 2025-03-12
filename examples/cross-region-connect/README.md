@@ -38,7 +38,10 @@ Run `terraform destroy` when you don't need these resources.
 
 ## Resources
 
-No resource.
+| Name | Type |
+|------|------|
+| data.huaweicloud_availability_zones.idc_center | data source |
+| data.huaweicloud_availability_zones.cloud_side | data source |
 
 ## Inputs
 
