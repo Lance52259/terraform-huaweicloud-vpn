@@ -49,9 +49,9 @@ No module.
 |------|-------------|------|:-------:|:--------:|
 | is_customer_gateway_create | Controls whether a VPN customer gateway should be created | `bool` | `true` | N |
 | customer_gateway_name | The name of the VPN gateway | `string` | `""` | Y (Unless is_customer_gateway_create is specified as false) |
-| customer_gateway_id_type | The identifier type of the VPN customer gateway | `string` | "ip" | Y |
+| customer_gateway_id_type | The identifier type of the VPN customer gateway | `string` | `"ip"` | Y |
 | customer_gateway_id_value | The identifier of the VPN customer gateway | `string` | `""` | Y (Unless is_customer_gateway_create is specified as false) |
-| customer_gateway_bgp_asn | The BGP ASN number of the VPN customer gateway | `number` | null | N |
+| customer_gateway_bgp_asn | The BGP ASN number of the VPN customer gateway | `number` | `null` | N |
 | customer_gateway_certificate_content | The CA certificate content of the VPN customer gateway | `string` | `""` | N |
 | customer_gateway_tags | The key/value pairs to associate with the VPN customer gateway | <pre>map(string)</pre> | <pre>{}</pre> | N |
 <!-- markdownlint-enable MD013 -->
