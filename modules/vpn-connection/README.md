@@ -4,19 +4,45 @@ Manages the VPN connection resource.
 
 ## Notes
 
-If you want to manage an existing VPN connection using Terraform (otherwise why are you reading this?) you need to
-import this resource like this:
+### How to import resources in the module structure
+
+If you want to manage an existing VPN connection using Terraform (otherwise why are you reading this?) you need to make
+sure that the corresponding module script has been defined in your `.tf` file, like this:
+
+```hcl
+# Manages a VPN connection.
+module "vpn_connection" {
+  source = "github.com/terraform-huaweicloud-modules/terraform-huaweicloud-vpn/modules/vpn-connection"
+
+  ...
+}
+```
+
+Then, execute the following command to import the corresponding resource into the management of the `.tfstate` file.
 
 ```bash
-$ terraform import module.vpn-customer-gateway.huaweicloud_vpn_connection.this[0] "connection_id"
+$ terraform import module.vpn_connection.huaweicloud_vpn_connection.this[0] "connection_id"
 
-module.vpn-gateway.huaweicloud_vpn_connection.this[0]: Importing from ID "connection_id"...
-module.vpn-gateway.huaweicloud_vpn_connection.this[0]: Import complete!
+module.vpn_connection.huaweicloud_vpn_connection.this[0]: Importing from ID "connection_id"...
+module.vpn_connection.huaweicloud_vpn_connection.this[0]: Import complete!
   Imported huaweicloud_vpn_connection (ID: connection_id)
-module.vpn-gateway.huaweicloud_vpn_connection.this[0]: Refreshing state... (ID: connection_id)
+module.vpn_connection.huaweicloud_vpn_connection.this[0]: Refreshing state... (ID: connection_id)
 
 Import successful!
 ```
+
+### What should we do before deploy this module example
+
+Before manage VPN resources, the access key (AK, the corresponding environment name is `HW_ACCESS_KEY`) and the secret key (SK, the corresponding environment name is `HW_SECRET_KEY`) should be configured.
+
+For the linux VM, you can configure the corresponding environment variables with the following commands:
+
+```bash
+$ export HW_ACCESS_KEY=XXXXXXXXXXXXXXXXXXXX
+$ export HW_SECRET_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+```
+
+Refer to this [document](https://support.huaweicloud.com/intl/en-us/devg-apisign/api-sign-provide-aksk.html) for AK/SK information obtain.
 
 ## Contributing
 
