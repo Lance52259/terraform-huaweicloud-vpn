@@ -43,8 +43,8 @@ No resource.
 
 ## Inputs
 
-No input
+No input.
 
 ## Outputs
 
-No output
+No output.
